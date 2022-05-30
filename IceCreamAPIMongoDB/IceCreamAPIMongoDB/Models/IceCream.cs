@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace IceCreamAPIMongoDB.Data
+namespace IceCreamAPIMongoDB.Models
 {
     [BsonIgnoreExtraElements] //Required for additional arrays in class
     public class IceCream
@@ -9,7 +9,7 @@ namespace IceCreamAPIMongoDB.Data
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         
 
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         public bool LargeSize { get; set; }
 

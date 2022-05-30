@@ -1,4 +1,5 @@
 using IceCreamAPIMongoDB.Data;
+using IceCreamAPIMongoDB.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<IceCreamDatabaseSettings>(builder.Configuration.GetSection("IceCreamDatabaseSettings"));
@@ -8,6 +9,7 @@ var app = builder.Build();
 app.MapGet("/", () => "IceCream API!");
 
 app.MapGet("/api/icecream", async (IceCreamServices services) => await services.GetAsync());
+app.MapGet("/api/scoops", async (IceCreamServices services) => await services.GetAsync());
 
 app.MapGet("/api/icecream/{id}", async (IceCreamServices service, string id) =>
 {

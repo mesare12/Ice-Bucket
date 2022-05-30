@@ -1,4 +1,5 @@
 ﻿using IceCreamAPIMongoDB.Data;
+using IceCreamAPIMongoDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;

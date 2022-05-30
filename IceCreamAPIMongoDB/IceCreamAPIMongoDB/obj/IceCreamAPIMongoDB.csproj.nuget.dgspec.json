@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\K-J\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj": {}
+    "C:\\Users\\olsso\\source\\repos\\Ice-bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\K-J\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj": {
+    "C:\\Users\\olsso\\source\\repos\\Ice-bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\K-J\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj",
+        "projectUniqueName": "C:\\Users\\olsso\\source\\repos\\Ice-bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj",
         "projectName": "IceCreamAPIMongoDB",
-        "projectPath": "C:\\Users\\K-J\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj",
-        "packagesPath": "C:\\Users\\K-J\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\K-J\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\obj\\",
+        "projectPath": "C:\\Users\\olsso\\source\\repos\\Ice-bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj",
+        "packagesPath": "C:\\Users\\olsso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olsso\\source\\repos\\Ice-bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\K-J\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\olsso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

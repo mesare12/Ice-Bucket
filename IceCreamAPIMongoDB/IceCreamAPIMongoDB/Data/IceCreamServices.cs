@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using IceCreamAPIMongoDB.Models;
 
 namespace IceCreamAPIMongoDB.Data
 {
