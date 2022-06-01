@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
+using IceCreamAPIMongoDB.Models;
 using MongoDB.Driver;
 
 namespace IceCreamAPIMongoDB.Data
@@ -14,7 +15,6 @@ namespace IceCreamAPIMongoDB.Data
             _icecream = mongoClient.GetDatabase(options.Value.DatabaseName)
                 .GetCollection<IceCream>(options.Value.IceCreamCollectionName);
 
-
         }
 
         public async Task<List<IceCream>> GetAsync() =>
@@ -22,6 +22,7 @@ namespace IceCreamAPIMongoDB.Data
 
         public async Task<IceCream> GetAsync(string id) =>
             await _icecream.Find(m => m.Id == id).FirstOrDefaultAsync();
+     
 
         public async Task CreateAsync(IceCream newIceCream) =>
             await _icecream.InsertOneAsync(newIceCream);

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IceCreamAPIMongoDB",
+    "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB",
+    "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\Model"
   ],
-  "SelectedNode": "\\C:\\Users\\K-J\\Source\\Repos\\Ice-Bucket",
+  "SelectedNode": "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\Model\\IceCream.cs",
   "PreviewInSolutionExplorer": false
 }

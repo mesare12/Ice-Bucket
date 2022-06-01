@@ -1,9 +1,10 @@
 ﻿using IceCreamAPIMongoDB.Data;
+using IceCreamAPIMongoDB.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 
-namespace IceCreamAPIMongoDB.Controller
+namespace IceCreamAPIMongoDB.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -15,7 +16,7 @@ namespace IceCreamAPIMongoDB.Controller
             _iceCreamServices = iceCreamServices;
 
         [HttpGet]
-        public async Task<List<IceCream>> Get() =>
+        public async Task<List<IceCream>> Get() =>           
             await _iceCreamServices.GetAsync();
 
         [HttpGet("{id:length(24)}")]
@@ -32,15 +33,15 @@ namespace IceCreamAPIMongoDB.Controller
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(IceCream newIceCream)
+        public async Task<IActionResult> Post([FromBody] IceCream newIceCream)
         {
             await _iceCreamServices.CreateAsync(newIceCream);
 
             return CreatedAtAction(nameof(Get), new { id = newIceCream.Id }, newIceCream);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(string id, IceCream updatedIceCream)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(string id, [FromBody] IceCream updatedIceCream)
         {
             var icecream = await _iceCreamServices.GetAsync(id);
 

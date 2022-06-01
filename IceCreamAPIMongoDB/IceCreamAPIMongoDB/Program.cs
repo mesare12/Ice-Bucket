@@ -1,4 +1,5 @@
 using IceCreamAPIMongoDB.Data;
+using IceCreamAPIMongoDB.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<IceCreamDatabaseSettings>(builder.Configuration.GetSection("IceCreamDatabaseSettings"));
