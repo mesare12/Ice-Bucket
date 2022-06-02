@@ -10,7 +10,9 @@ namespace IceCreamAPIMongoDB.Models
 
 
         public string? Id { get; set; }
-        public string _name { get; set; } = null!;
-        public bool _isSoft { get; set; }
+        [BsonElement("flavour")]
+        public string Flavour { get; set; } = null!;
+        [BsonElement("soft")]
+        public bool Soft { get; set; }
     }
 }

@@ -17,11 +17,11 @@ namespace IceCreamAPIMongoDB.Models
         ////////Order details////
 
         [BsonElement("available_toppings")]
-        public string[]? Topping { get; set; }
+        public List<string>? Topping { get; set; }
         [BsonElement("available_containers")]
         public string[]? Cup { get; set; }
         [BsonElement("available_scoops")]
-        public string[]? Scoop { get; set; }
+        public List<string>? Scoop { get; set; }
         
 
     }
