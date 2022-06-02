@@ -10,10 +10,5 @@
 
 
     }
-    public interface Isettings
-    {
-        string ConnectionString { get; set; }
-        string DatabaseName { get; set; }
-        string IceCreamCollectionName { get; set; } 
-    }
+    
 }
