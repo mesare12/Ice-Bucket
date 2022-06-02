@@ -12,6 +12,6 @@ namespace IceCreamAPIMongoDB.Models
         public string? Id { get; set; }
         [BsonElement("name")]
         public string Name { get; set; } = null!;
-        public string Adress {get; set;} = null!;
+        public string Address {get; set;} = null!;
     }
 }
