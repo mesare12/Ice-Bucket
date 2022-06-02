@@ -10,49 +10,49 @@ namespace IceCreamAPIMongoDB.Controllers
     [Route("api/[controller]")]
     public class IceCreamController : ControllerBase
     {
-        private readonly IceCreamServices _iceCreamServices;
+        private readonly VendorServices _vendorServices;
 
-        public IceCreamController(IceCreamServices iceCreamServices) =>
-            _iceCreamServices = iceCreamServices;
+        public IceCreamController(VendorServices vendorServices) =>
+            _vendorServices = vendorServices;
 
         [HttpGet]
-        public async Task<List<IceCream>> Get() =>           
-            await _iceCreamServices.GetAsync();
+        public async Task<List<Vendor>> Get() =>           
+            await _vendorServices.GetAsync();
 
         [HttpGet("{id:length(24)}")]
-        public async Task<ActionResult<IceCream>> Get(string id)
+        public async Task<ActionResult<Vendor>> Get(string id)
         {
-            var icecream = await _iceCreamServices.GetAsync(id);
+            var vendor = await _vendorServices.GetAsync(id);
 
-            if (icecream is null)
+            if (vendor is null)
             {
                 return NotFound();
             }
 
-            return icecream;
+            return vendor;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] IceCream newIceCream)
+        public async Task<IActionResult> Post([FromBody] Vendor newVendor)
         {
-            await _iceCreamServices.CreateAsync(newIceCream);
+            await _vendorServices.CreateAsync(newVendor);
 
-            return CreatedAtAction(nameof(Get), new { id = newIceCream.Id }, newIceCream);
+            return CreatedAtAction(nameof(Get), new { id = newVendor.Id }, newVendor);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(string id, [FromBody] IceCream updatedIceCream)
+        public async Task<IActionResult> Update(string id, [FromBody] Vendor updatedVendor)
         {
-            var icecream = await _iceCreamServices.GetAsync(id);
+            var vendor = await _vendorServices.GetAsync(id);
 
-            if (icecream is null)
+            if (vendor is null)
             {
                 return NotFound();
             }
 
-            updatedIceCream.Id = icecream.Id;
+            updatedVendor.Id = vendor.Id;
 
-            await _iceCreamServices.UpdateAsync(id, updatedIceCream);
+            await _vendorServices.UpdateAsync(id, updatedVendor);
 
             return NoContent();
         }
@@ -60,14 +60,14 @@ namespace IceCreamAPIMongoDB.Controllers
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> Delete(string id)
         {
-            var icecream = await _iceCreamServices.GetAsync(id);
+            var vendor = await _vendorServices.GetAsync(id);
 
-            if (icecream is null)
+            if (vendor is null)
             {
                 return NotFound();
             }
 
-            await _iceCreamServices.DeleteAsync(id);
+            await _vendorServices.DeleteAsync(id);
 
             return NoContent();
         }
