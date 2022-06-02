@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/home/sebastian/RiderProjects/Ice-Bucket/IceCreamAPIMongoDB/IceCreamAPIMongoDB/IceCreamAPIMongoDB.csproj": {}
+    "C:\\Users\\olsso\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj": {}
   },
   "projects": {
-    "/home/sebastian/RiderProjects/Ice-Bucket/IceCreamAPIMongoDB/IceCreamAPIMongoDB/IceCreamAPIMongoDB.csproj": {
+    "C:\\Users\\olsso\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sebastian/RiderProjects/Ice-Bucket/IceCreamAPIMongoDB/IceCreamAPIMongoDB/IceCreamAPIMongoDB.csproj",
+        "projectUniqueName": "C:\\Users\\olsso\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj",
         "projectName": "IceCreamAPIMongoDB",
-        "projectPath": "/home/sebastian/RiderProjects/Ice-Bucket/IceCreamAPIMongoDB/IceCreamAPIMongoDB/IceCreamAPIMongoDB.csproj",
-        "packagesPath": "/home/sebastian/.nuget/packages/",
-        "outputPath": "/home/sebastian/RiderProjects/Ice-Bucket/IceCreamAPIMongoDB/IceCreamAPIMongoDB/obj/",
+        "projectPath": "C:\\Users\\olsso\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.csproj",
+        "packagesPath": "C:\\Users\\olsso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olsso\\Source\\Repos\\Ice-Bucket\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/sebastian/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\olsso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

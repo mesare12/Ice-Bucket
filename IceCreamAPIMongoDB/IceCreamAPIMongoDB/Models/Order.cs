@@ -3,7 +3,7 @@
 namespace IceCreamAPIMongoDB.Models
 {
     [BsonIgnoreExtraElements] //Required for additional arrays in class
-    public class IceCream
+    public class Order
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
