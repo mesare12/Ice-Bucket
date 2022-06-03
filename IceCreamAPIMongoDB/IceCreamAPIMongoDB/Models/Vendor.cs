@@ -1,5 +1,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using System.Text.Json;
+
 
 namespace IceCreamAPIMongoDB.Models
 {
@@ -15,14 +17,13 @@ namespace IceCreamAPIMongoDB.Models
         public string? Address {get; set;} = null!;
 
         ////////Order details////
-
         [BsonElement("available_toppings")]
-        public List<string>? Topping { get; set; }
+        public List<Dictionary<string, object>> Toppings { get; set; } = null!;
         [BsonElement("available_containers")]
-        public string[]? Cup { get; set; }
+        public List<Dictionary<string, object>> Cup { get; set; } = null!;
         [BsonElement("available_scoops")]
-        public List<string>? Scoop { get; set; }
-        
+        public List<Dictionary<string, object>> Scoop { get; set; } = null!;
+
 
     }
 }

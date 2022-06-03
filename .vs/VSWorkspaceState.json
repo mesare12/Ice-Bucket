@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\IceCreamAPIMongoDB",
-    "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB"
+    "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB",
+    "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\Controllers",
+    "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\Models"
   ],
-  "SelectedNode": "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB.sln",
+  "SelectedNode": "\\IceCreamAPIMongoDB\\IceCreamAPIMongoDB\\Models\\Vendor.cs",
   "PreviewInSolutionExplorer": false
 }

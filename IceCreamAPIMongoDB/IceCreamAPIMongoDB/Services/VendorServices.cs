@@ -8,7 +8,7 @@ namespace IceCreamAPIMongoDB.Data
     {
         private readonly IMongoCollection<Vendor> _vendor;
 
-        public VendorServices(IOptions<IceCreamDatabaseSettings > options)
+        public VendorServices(IOptions<VendorDbSettings > options)
         {
             var mongoClient = new MongoClient(options.Value.ConnectionString);
 

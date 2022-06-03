@@ -8,11 +8,11 @@ namespace IceCreamAPIMongoDB.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class IceCreamController : ControllerBase
+    public class VendorController : ControllerBase
     {
         private readonly VendorServices _vendorServices;
 
-        public IceCreamController(VendorServices vendorServices) =>
+        public VendorController(VendorServices vendorServices) =>
             _vendorServices = vendorServices;
 
         [HttpGet]

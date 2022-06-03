@@ -6,19 +6,21 @@ namespace IceCreamAPIMongoDB.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ToppingController : Controller
+    public class ContainerController : Controller
     {
         private readonly VendorServices _vendorServices;
+        public ContainerController(VendorServices vendorServices) =>
+         _vendorServices = vendorServices;
 
-        public ToppingController(VendorServices vendorServices) =>
-            _vendorServices = vendorServices;
+        [HttpGet]
+        public async Task<List<Vendor>> Get() =>
+            await _vendorServices.GetAsync();
 
         [HttpGet("{id}")]
-
         public async Task<ActionResult<Vendor>> Get(string id)
         {
             var vendor = await _vendorServices.GetAsync(id);
-            
+
             if (vendor is null)
             {
                 return NotFound();
@@ -27,4 +29,4 @@ namespace IceCreamAPIMongoDB.Controllers
             return vendor;
         }
     }
-};
+}
